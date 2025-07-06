@@ -1,27 +1,63 @@
 <?php
 // =====================================
-//  joonguini and joe
+//  Learn with Codency
 // =====================================
 
-/* ----- Variables & Data Types ----- */
+/* ----- Variables & Data Types in PHP ----- */
 
-/* --------- PHP Data Types --------- */
-/*
-- String - A string is a series of characters surrounded by quotes
-- Integer - Whole numbers
-- Float - Decimal numbers
-- Boolean - true or false
-- Array - An array is a special variable, which can hold more than one value
-- Object - A class
-- NULL - Empty variable
-- Resource - A special variable that holds a resource
+/* -------- PHP Data Types --------
+PHP supports several basic data types used to store different kinds of values:
 */
 
-/* --------- Variable Rules --------- */
-/*
-- Variables must be prefixed with $
-- Variables must start with a letter or the underscore character
-- variables can't start with a number
-- Variables can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
-- Variables are case-sensitive ($name and $NAME are two different variables)
+// String: A sequence of characters enclosed in quotes
+$name = "Codency";
+
+// Integer: A whole number, without a decimal point
+$age = 25;
+
+// Float (or Double): A number with a decimal point
+$price = 19.99;
+
+// Boolean: Represents true or false
+$isAvailable = true;
+
+// Array: A collection of multiple values in a single variable
+$colors = ["red", "green", "blue"];
+
+// Object: An instance of a class (used in OOP)
+class Car {
+    public $brand;
+}
+$myCar = new Car();
+$myCar->brand = "Toyota";
+
+// NULL: A variable with no value assigned
+$nothing = null;
+
+// Resource: A special type that holds external resources (e.g., database connections)
+// Usually created by specific functions and not manually
+$file = fopen("example.txt", "r");
+
+
+
+/* -------- PHP Variable Rules --------
+When working with variables in PHP, keep these rules in mind:
 */
+
+// Variables must start with a $ sign
+$username = "admin";
+
+// The first character must be a letter or an underscore (_)
+$_count = 10;
+
+// Variable names cannot start with a number
+// $2total = 50; // Invalid
+
+// Valid characters: letters, numbers, and underscores only
+$user_id_2025 = 123;
+
+// PHP variable names are case-sensitive
+$fruit = "apple";
+$Fruit = "orange"; // This is a different variable
+
+?>
